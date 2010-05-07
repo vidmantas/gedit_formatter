@@ -25,7 +25,8 @@ language_formatters = {
   "ruby":["ruby",os.path.join(os.path.dirname(__file__), "rubybeautifier.rb")],
   "rubyonrails":["ruby",os.path.join(os.path.dirname(__file__), "rubybeautifier.rb")],
 #  "xml":["xsltproc", os.path.join(os.path.dirname(__file__), "indent.xsl")],
-  "erb":["ruby",os.path.join(os.path.dirname(__file__), "erbbeautifier.rb")]
+  "erb":["ruby",os.path.join(os.path.dirname(__file__), "erbbeautifier.rb")],
+  "rhtml":["ruby",os.path.join(os.path.dirname(__file__), "erbbeautifier.rb")]
 }
 ui_str = """<ui>
   <menubar name="MenuBar">
