@@ -23,6 +23,7 @@ import subprocess
 
 language_formatters = {
   "ruby":["ruby",os.path.join(os.path.dirname(__file__), "rubybeautifier.rb")],
+  "rubyonrails":["ruby",os.path.join(os.path.dirname(__file__), "rubybeautifier.rb")],
 #  "xml":["xsltproc", os.path.join(os.path.dirname(__file__), "indent.xsl")],
   "erb":["ruby",os.path.join(os.path.dirname(__file__), "erbbeautifier.rb")]
 }
@@ -78,7 +79,7 @@ class CodeFormatterWindowHelper:
 
         self._action_group = gtk.ActionGroup("CodeFormatterPluginActions")
         self._action_group.add_actions([("FormatCode", gtk.STOCK_SELECT_COLOR, _("Format Code"),
-                                         '<Control><Alt>f', _("Format the Code"),
+                                         '<Control><Alt>r', _("Format the Code"),
                                          self.on_format_code_activate)])
 
         # Insert the action group
